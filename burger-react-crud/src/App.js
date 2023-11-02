@@ -1,10 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+
+import Layout from "./components/Layout/Layout";
+import BurgerBuilder from "./containers/BurgerBuilder/BurgerBuilder";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <div>
+      <Layout>
+        <BurgerBuilder />
+      </Layout>
     </div>
   );
 }
